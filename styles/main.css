@@ -3,6 +3,8 @@
 
 .flex-container{
     display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
 }
  body {
     font-family: "Montserrat", sans-serif; 
@@ -77,7 +79,10 @@ profile.img{}
 .timeline-container{
     width: 1200px;
     margin: 200px auto;
+    justify-content: center;
+    flex-direction: row;
 }
+
 
 .timeline{
     counter-reset: year 2017;
@@ -125,19 +130,21 @@ ul:nth-child(1){
     transition: all ease-in-out;
 
 }
+/*  
 .timeline li:first-child:after{
     content: none;
 }
 .timeline li.active{
-    color:#cf8cd1;
+    color:white;
 }
 .timeline li.active:before{
-    background:blue;
-    color:chartreuse;
+    background:#8f5e36;
+    color:white;
 }
 .timeline li active + li:after{
-    background:crimson;
+    background:#8f5e36;
 }
+ */
 #coding-projects{
     font-family: "Montserrat", sans-serif;
 }
@@ -146,7 +153,13 @@ ul:nth-child(1){
 .projects{
     list-style-type: none;
 }
+#coding-projects{
+    width: 1200px;
+    margin: 200px auto;
+    justify-content: flex-start;
+    flex-direction: row;
 
+}
 /* p{
     color:#8f5e36;
     font-size:100px
@@ -160,6 +173,12 @@ ul:nth-child(1){
     text-align: ;
     text-decoration:double ; */
 
+    .myfooter{
+        width: 1200px;
+        margin: 200px auto;
+        justify-content: center;
+        flex-direction: row;   
+    }
 #socials-footer{}
 #contacts-header{}
 h3{
@@ -172,7 +191,6 @@ ul{
     margin: 0;
     padding: 0;
     text-align:center
-    
     word-wrap:below;
 }
 li{
