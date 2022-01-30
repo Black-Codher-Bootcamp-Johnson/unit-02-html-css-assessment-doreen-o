@@ -1,7 +1,7 @@
-<style>
+
 @font-face{
-    font-family: "Montserrat", sans-serif;
- src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    font-family: "Montserrat";
+ src:url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 }
 .flex-container{
     display:flex;
@@ -215,4 +215,4 @@ li{
 .social-icons:hover{
 opacity:0.5;
 }
-</style>
+
