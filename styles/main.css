@@ -1,6 +1,9 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
+.flex-container{
+    display:flex;
+}
  body {
     font-family: "Montserrat", sans-serif; 
     background-color: #d1b38c;
@@ -71,7 +74,7 @@ profile.img{}
 
 #my-timeline{}
 
-.container{
+.timeline-container{
     width: 1200px;
     margin: 200px auto;
 }
@@ -124,6 +127,16 @@ ul:nth-child(1){
 }
 .timeline li:first-child:after{
     content: none;
+}
+.timeline li.active{
+    color:#cf8cd1;
+}
+.timeline li.active:before{
+    background:blue;
+    color:chartreuse;
+}
+.timeline li active + li:after{
+    background:crimson;
 }
 #coding-projects{
     font-family: "Montserrat", sans-serif;
